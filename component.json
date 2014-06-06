@@ -1,6 +1,6 @@
 {
   "name": "stop",
-  "repo": "yields/stop",
+  "repo": "matchdav/stop",
   "description": "Cross-browser .stopPropagation.",
   "version": "0.0.2",
   "keywords": [],
