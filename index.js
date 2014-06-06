@@ -1,6 +1,6 @@
 
 /**
- * really truly finally stop on the given `e`.  as in you just want the 
+ * really truly finally stop on the given `e`.  as in you just want the event to go away.
  * 
  * examples:
  * 
