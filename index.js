@@ -1,6 +1,6 @@
 
 /**
- * stop propagation on the given `e`.
+ * really truly finally stop on the given `e`.  as in you just want the 
  * 
  * examples:
  * 
@@ -13,9 +13,8 @@
  * @param {Event} e
  */
 
-module.exports = function(e){
-  e = e || window.event;
-  return e.stopPropagation
-    ? e.stopPropagation()
-    : e.cancelBubble = true;
-};
+module.exports = function stop(e){
+	e = e || window.event;
+	if(e.preventDefault) e.preventDefault(); //do jQuery things if supported.
+	return e.stopPropagation && e.stopPropagation() || e.cancelBubble=true;
+}
